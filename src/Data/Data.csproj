@@ -134,9 +134,6 @@
     <Compile Include="Document.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DocumentView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="Exif.cs">
       <SubType>Code</SubType>
     </Compile>

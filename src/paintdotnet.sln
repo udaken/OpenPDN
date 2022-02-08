@@ -5,7 +5,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "paintdotnet", "paintdotnet\paintdotnet.csproj", "{34920450-488E-41DF-8565-AA22C2A56902}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2E4E8805-00F7-4B18-A967-C23994BBCE75} = {2E4E8805-00F7-4B18-A967-C23994BBCE75}
-		{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC} = {E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}
 		{AE3E7C54-B864-4C89-9CC1-89DBE2042E02} = {AE3E7C54-B864-4C89-9CC1-89DBE2042E02}
 		{5ED3F986-A73E-44C5-AC1A-BD101472CB01} = {5ED3F986-A73E-44C5-AC1A-BD101472CB01}
 		{6D06E18A-6A4A-49FF-BB33-2C722D051BE8} = {6D06E18A-6A4A-49FF-BB33-2C722D051BE8}
@@ -14,10 +13,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{1EADE568-A866-4DD4-9898-0A151E3F0E26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Effects", "Effects\Effects.csproj", "{2E4E8805-00F7-4B18-A967-C23994BBCE75}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StylusReader", "StylusReader\StylusReader.csproj", "{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemLayer", "SystemLayer\SystemLayer.csproj", "{80572820-93A5-4278-A513-D902BEA2639C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{66681BB0-955D-451D-A466-94C045B1CF4A}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -39,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources.mui", "Resources.
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Base\Base.csproj", "{05C4C721-F8E3-42E1-B817-9D165DA1A9FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemLayer", "SystemLayer\SystemLayer.csproj", "{80572820-93A5-4278-A513-D902BEA2639C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,18 +62,6 @@ Global
 		{2E4E8805-00F7-4B18-A967-C23994BBCE75}.Release and Package|Any CPU.Build.0 = Release|Any CPU
 		{2E4E8805-00F7-4B18-A967-C23994BBCE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E4E8805-00F7-4B18-A967-C23994BBCE75}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}.Release and Package|Any CPU.ActiveCfg = Release|Any CPU
-		{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}.Release and Package|Any CPU.Build.0 = Release|Any CPU
-		{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{80572820-93A5-4278-A513-D902BEA2639C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{80572820-93A5-4278-A513-D902BEA2639C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{80572820-93A5-4278-A513-D902BEA2639C}.Release and Package|Any CPU.ActiveCfg = Release|Any CPU
-		{80572820-93A5-4278-A513-D902BEA2639C}.Release and Package|Any CPU.Build.0 = Release|Any CPU
-		{80572820-93A5-4278-A513-D902BEA2639C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{80572820-93A5-4278-A513-D902BEA2639C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{66681BB0-955D-451D-A466-94C045B1CF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{66681BB0-955D-451D-A466-94C045B1CF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66681BB0-955D-451D-A466-94C045B1CF4A}.Release and Package|Any CPU.ActiveCfg = Release|Any CPU
@@ -110,6 +95,12 @@ Global
 		{05C4C721-F8E3-42E1-B817-9D165DA1A9FB}.Release and Package|Any CPU.Build.0 = Release|Any CPU
 		{05C4C721-F8E3-42E1-B817-9D165DA1A9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05C4C721-F8E3-42E1-B817-9D165DA1A9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80572820-93A5-4278-A513-D902BEA2639C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80572820-93A5-4278-A513-D902BEA2639C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80572820-93A5-4278-A513-D902BEA2639C}.Release and Package|Any CPU.ActiveCfg = Release|Any CPU
+		{80572820-93A5-4278-A513-D902BEA2639C}.Release and Package|Any CPU.Build.0 = Release|Any CPU
+		{80572820-93A5-4278-A513-D902BEA2639C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80572820-93A5-4278-A513-D902BEA2639C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

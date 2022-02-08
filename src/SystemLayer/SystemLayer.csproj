@@ -83,10 +83,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.WIA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Interop.WIA\Interop.WIA.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -142,9 +138,6 @@
     <Compile Include="IInkHooks.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Ink.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Memory.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -185,9 +178,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SafeNativeMethods.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ScanningAndPrinting.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ScanResult.cs">
@@ -231,7 +221,6 @@
     <Compile Include="WaitHandleArray.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WiaInterfaceInProc.cs" />
     <Compile Include="WiaInterfaceOutOfProc.cs" />
     <EmbeddedResource Include="PropertyItem.png" />
   </ItemGroup>
@@ -239,10 +228,6 @@
     <ProjectReference Include="..\Base\Base.csproj">
       <Project>{05C4C721-F8E3-42E1-B817-9D165DA1A9FB}</Project>
       <Name>Base</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StylusReader\StylusReader.csproj">
-      <Project>{E2E8B028-9FF8-4AF1-86BF-F20568EAB0EC}</Project>
-      <Name>StylusReader</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
