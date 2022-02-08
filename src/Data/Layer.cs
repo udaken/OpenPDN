@@ -21,6 +21,24 @@ using System.Windows.Forms;
 
 namespace PaintDotNet
 {
+    public enum LayerBlendMode
+    {
+        Normal = 0,
+        Multiply = 1,
+        Additive = 2,
+        ColorBurn = 3,
+        ColorDodge = 4,
+        Reflect = 5,
+        Glow = 6,
+        Overlay = 7,
+        Difference = 8,
+        Negation = 9,
+        Lighten = 10,
+        Darken = 11,
+        Screen = 12,
+        Xor = 13
+    }
+
     /// <summary>
     /// A layer's properties are immutable. That is, you can modify the surface
     /// of a layer all you want, but to change its dimensions requires creating
@@ -34,6 +52,18 @@ namespace PaintDotNet
     {
         private int width;
         private int height;
+
+        private LayerBlendMode blendMode = default;
+        public LayerBlendMode BlendMode { 
+            get => blendMode; 
+            set
+            {
+                if(blendMode != LayerBlendMode.Normal)
+                {
+                    System.Diagnostics.Debug.Print("Unsupported BlendMode: " + value);
+                }
+            }
+        }
 
         /// <summary>
         /// The background layer is generally opaque although it doesn't *have* to be. For
